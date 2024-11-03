@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/train_background"
+    android:paddingTop="0dp"
+    android:paddingBottom="150dp"> <!-- Adjust the bottom padding -->
+
+    <!-- Heading for Train Ticket Booking -->
+    <TextView
+        android:id="@+id/heading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Ticket Booking"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <!-- Source and Destination Input Fields -->
+    <EditText
+        android:id="@+id/source_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Source"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/destination_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Destination"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <!-- Date Picker -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Time Picker -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Toggle and Switch -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/singlelady_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Lady"
+            android:gravity="center"/>
+
+        <ToggleButton
+            android:id="@+id/ac_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="NON AC"
+            android:textOn="AC"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Book Ticket Button -->
+    <Button
+        android:id="@+id/bookTicket_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Ticket"
+        android:gravity="center"/>
+
+</LinearLayout>
